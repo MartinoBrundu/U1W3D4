@@ -1,19 +1,19 @@
+const Number = []
 
 
-const h1 = document.querySelector('h1')
-
-const numberBingo = []
 
 
-const celleNumber = function (){
-    const tav1  = document.getElementById ('tabella')
-    for (let i = 0 ; i < 77 ; i++) {
-const numberCell = document.createElement('div')
-const cellValue = document.createElement ('h3')
-cellValue.innerText = i + 1
-numberCell.appendChild(cellValue)
-tabella.appendChild(numberCell)
+const creoCelle = function () {
+    const tabellaSection = document.getElementById('tabella')
+    
+    for (let i = 0 ; i < 76 ; i++) {
+        
+        const numeriCelle = document.createElement('div')
+        const valoreNumeri = document.createElement('h3')
+        valoreNumeri.innerText= i + 1 
+        numeriCelle.appendChild(valoreNumeri)
+        tabellaSection.appendChild(numeriCelle)
     }
 }
 
-celleNumber()
+creoCelle()
